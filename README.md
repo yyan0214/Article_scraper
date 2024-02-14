@@ -20,13 +20,13 @@ The script currently supports downloading articles from the following websites:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your_username/Article-scraper.git
+    git clone https://github.com/yyan0214/Article_scraper.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd project1
+    cd Article_scraper
     ```
 
 3. Initialize the conda environment with the provided `requirements.yml` file:
@@ -38,12 +38,12 @@ The script currently supports downloading articles from the following websites:
 4. Activate the conda environment:
 
     ```bash
-    conda activate project1
+    conda activate downloader
     ```
 
 ## Usage
 
-1. Create a text file names urls.txt that containing URLs of the articles you want to download. Each URL should be on a separate line.
+1. Create a text file names urls.txt that containing URLs of the articles you want to download. Each URL should be on a separate line. Or you could use the urls.txt file in folder to test.
 
 2. Make sure the my_news_downloader.py and urls.txt in same folder in your computer. Run the`my_news_downloader.py` like:
 
