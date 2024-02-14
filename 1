@@ -1,0 +1,38 @@
+if article_contents:
+            # Extract text from each section and concatenate
+            article_text = '\n'.join(section.get_text(separator='\n') for section in article_contents)
+            return article_text.strip()  # Strip leading/trailing whitespace
+        else:
+            return "No article content found."
+
+
+
+def download_article(url):
+    try:
+        # Set user agent to avoid bot detection
+        req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        # Open URL and read content
+        with urlopen(req) as response:
+            html = response.read()
+        # Parse the HTML content of the page
+        soup = BeautifulSoup(html, 'html.parser')
+        # Find the main content of the article based on specific HTML elements
+        article_content = soup.find_all('section', {'class': 'sc-4e574cd-0 bhtqwj'}) 
+        if article_content:
+            # Extract text from the article content
+            article_text = '\n'.join(section.get_text(separator='\n') for section in article_content)
+            # Remove underlines
+            #cleaned_text = re.sub(r'(?<=[a-zA-Z0-9])_(?=[a-zA-Z0-9])', '', article_text)
+            return article_text.strip()  # Strip leading/trailing whitespace
+        else:
+            return "No article content found."
+    except Exception as e:
+        return f"Error occurred: {str(e)}"
+
+if last_paragraph:
+            # Extract text from the article content
+            last_paragraph_text = '\n'.join(section.get_text(separator='\n') for section in last_paragraph)
+            cleaned_text = re.sub(r'(?<=[a-zA-Z0-9])_(?=[a-zA-Z0-9])', '', last_paragraph_text)
+            article_text = article.text.strip() + '\n' + cleaned_text.strip()
+        
+        return article_text
