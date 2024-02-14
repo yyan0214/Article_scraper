@@ -20,7 +20,7 @@ The script currently supports downloading articles from the following websites:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your_username/article-downloader.git
+    git clone https://github.com/your_username/Article-scraper.git
     ```
 
 2. Navigate to the project directory:
