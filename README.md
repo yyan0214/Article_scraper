@@ -52,9 +52,9 @@ The script currently supports downloading articles from the following websites:
 
 ## Usage
 
-1. Create a text file names urls.txt that containing URLs of the articles you want to download. Each URL should be on a separate line. Or you could use the urls.txt file in the above to test, it contains some USA TODAY news.
+1. Create a text file names raw_urls.txt that containing URLs of the articles you want to download. Each URL should be on a separate line. Or you could use the raw_urls.txt file in the above to test, it contains some USA TODAY news.
 
-2. Make sure the run.py and urls.txt in same folder in your computer. Run the`run.py` like:
+2. Make sure the run.py and raw_urls.txt in same folder in your computer. Run the`run.py` like:
 
     ```bash
     python3 run.py
