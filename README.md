@@ -45,21 +45,21 @@ The script currently supports downloading articles from the following websites:
 
 1. Create a text file names urls.txt that containing URLs of the articles you want to download. Each URL should be on a separate line. Or you could use the urls.txt file in the above to test, it contains some BBC news.
 
-2. Make sure the my_news_downloader.py and urls.txt in same folder in your computer. Run the`my_news_downloader.py` like:
+2. Make sure the run.py and urls.txt in same folder in your computer. Run the`run.py` like:
 
     ```bash
-    python3 my_news_downloader.py
+    python3 run.py
     ```
 
 3. The script will download the articles from the provided URLs and save them to text files in the current directory.
 
 ## Customization
 
-You can customize the script to support additional websites or adjust the extraction logic as needed. Simply modify the code in the `download_article` function in `my_news_downloader.py`.
+You can customize the script to support additional websites or adjust the extraction logic as needed. Simply modify the code in the `get_article` function in `module1_functions.py`.
 
 ## Output
 
-The script will generate a text file for each article downloaded. Each text file will contain the extracted article content along with metadata such as the article title and author.
+The script will generate a text file for each article downloaded. Each text file will contain the extracted article content.
 
 ## Author
 
