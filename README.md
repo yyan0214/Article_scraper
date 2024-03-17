@@ -29,7 +29,16 @@ The script currently supports downloading articles from the following websites:
     cd Article_scraper
     ```
 
-3. Initialize the conda environment with the provided `requirements.yml` file:
+4. Switch to project_p2 branch:
+
+    ```bash
+    git branch -a
+    ```
+    ```bash
+    git checkout project_p2
+    ```
+
+4. Initialize the conda environment with the provided `requirements.yml` file:
 
     ```bash
     conda env create -f requirements.yml
@@ -38,7 +47,7 @@ The script currently supports downloading articles from the following websites:
 4. Activate the conda environment:
 
     ```bash
-    conda activate downloader
+    conda activate project2
     ```
 
 ## Usage
